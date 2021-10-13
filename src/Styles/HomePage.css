@@ -1,0 +1,137 @@
+.HomePage {
+    text-align: center;
+    height: 100vh;
+    background-color: black;
+  }
+  
+  .HomeContainer {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .page-img {
+    width: 100vw;
+    margin-top: -100px;
+    pointer-events: none;
+  }
+
+  .more-icon {
+    height: 5em;
+    color: white;
+    position: absolute;
+    left: 48%;
+    bottom: 1em;
+    cursor: pointer;
+    animation: anim 1.5s infinite;
+  }
+
+  @keyframes anim {
+    from {
+      /* opacity: 0%; */
+      bottom: 1em
+    }
+    50% {
+      /* opacity: 100%; */
+      bottom: 3em;
+    }
+    to {
+      /* opacity: 0%; */
+      bottom: 1em
+    }
+  }
+  
+  .page-header {
+    background-color: black;
+    /* min-height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+
+  .Intro {
+    text-align: start;
+    max-width: 40vw;
+  }
+
+  .Menu {
+    text-align: start;
+    margin-left: 20vw;
+    max-width: 40vw;
+  }
+
+  .hello-class {
+    font-size: 2.5em;
+    font-family: Inter-Bold;
+  }
+
+  .hello-body {
+    font-family: Lato-Regular;
+    color: #3BE2D8;
+  }
+
+  .menu-class {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    font-size: 2.5em;
+    font-family: Inter-Bold;
+    color: black;
+    -webkit-text-stroke: 2px #664771;
+    cursor: pointer;
+  }
+
+  .menu-class:hover {
+    color: #664771;
+    animation: hover 0.2s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes hover {
+    from {
+      margin-top: 0;
+      margin-bottom: 0.5em;
+    }
+    to {
+      margin-top: -0.05em;
+      margin-bottom: 0.55em;
+    }
+  }
+
+  .menu-item {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .menu-serial {
+    font-family: Inter-Regular;
+    margin-right: 1em;
+    font-size: 0.7em;
+    color: #808080;
+  }
+
+  .no-margin {
+    margin: 0;
+  }
+
+  /* Fonts */
+
+  @font-face {
+    font-family: "Inter-Regular";
+    src: local("Inter"),
+    url("../Assets/Fonts/Inter/Inter-Regular.otf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "Inter-Bold";
+    src: local("Inter"),
+    url("../Assets/Fonts/Inter/Inter-Bold.otf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Lato-Regular";
+    src: local("Lato"),
+    url("../Assets/Fonts/Lato/Lato-Regular.ttf") format("truetype");
+  }
+  
