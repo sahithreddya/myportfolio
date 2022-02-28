@@ -1,4 +1,6 @@
 .Home {
-  text-align: center;
+  /* text-align: center; */
   background-color: #1B1B1B;
+  display: grid;
+  grid-template-rows: 100vh 1fr;
 }

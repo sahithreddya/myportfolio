@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <div className="Home">
       <HomePage scrollFunc={() => scroll()} test={() => test()}/>
-      <Work ref={ref}/>
+      {/* <Work ref={ref}/> */}
     </div>
   );
 }
