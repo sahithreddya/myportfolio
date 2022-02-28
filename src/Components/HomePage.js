@@ -3,8 +3,6 @@ import more from '../Assets/Icons/more.svg';
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 
-// Testing default branch change 
-
 const HomePage = React.forwardRef((props, ref) => {
   const history = useHistory();
   const handleOnClick = (address) => history.push(`/${address}`);
