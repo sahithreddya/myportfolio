@@ -1,5 +1,4 @@
 import '../Styles/Work.css';
-import more from '../Assets/Icons/more.svg';
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 
