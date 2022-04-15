@@ -1,11 +1,11 @@
 import '../Styles/HomePage.css';
 import more from '../Assets/Icons/more.svg';
 import React from 'react';
-import { useHistory } from 'react-router-dom';
+// import { useHistory } from 'react-router-dom';
 
 const HomePage = React.forwardRef((props, ref) => {
-  const history = useHistory();
-  const handleOnClick = (address) => history.push(`/${address}`);
+  // const history = useHistory();
+  // const handleOnClick = (address) => history.push(`/${address}`);
 
   return (
     <div ref={ref} className="HomePage">
@@ -25,7 +25,7 @@ const HomePage = React.forwardRef((props, ref) => {
         <p className='menu-serial'>03</p>
         <p className='menu-class'>Résumé</p>
       </div>
-      <img src={more} onClick={props.scrollFunc} className="more-icon"/>
+      <img src={more} onClick={props.scrollFunc} className="more-icon" alt="more-icon"/>
     </div>
   );
 });

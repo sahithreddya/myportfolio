@@ -2,8 +2,6 @@ import '../Styles/Work.css';
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import { workItems } from '../Data/WorkData';
-import { render } from '@testing-library/react';
-
 
 const Work = React.forwardRef((props, ref) => {
   const history = useHistory();
