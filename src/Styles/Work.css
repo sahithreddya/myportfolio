@@ -1,98 +1,168 @@
+@import "./Fonts.css";
+
 .Work {
-    text-align: center;
-    height: 100vh;
+  display: grid;
+  text-align: center;
+  min-height: 100vh;
+  grid-gap: 10px;
+  grid-template-areas:
+    /* "navbar navbar navbar" */
+    "work work work"
+    "footer footer footer";
+  background-image: linear-gradient(transparent, black),;
+  /* background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('../Assets/Images/ikat pattern.png');
+  background-size: 7em; */
+}
+
+/* .NavBar {
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  grid-area: navbar;
+  height: 4em;
+  background-color: #664771;
+  z-index: 10;
+}
+
+.NavBarLogo {
+  position: relative;
+  background: url('../Assets/Images/Logo + Name.svg') no-repeat 0 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 15;
+  height: inherit;
+  margin-left: 10px;
+} */
+
+.NavBtn {
+  grid-area: navbtn;
+  width: 2em;
+  background-color: #664771;
+}
+
+.Footer {
+  grid-area: footer;
+  height: 5em;
+  background-color: gray;
+}
+
+.WorkContainer {
+  padding: 5em 10em;
+  grid-area: work;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 500px));
+  grid-gap: 20px;
+  justify-content: center;
+}
+
+.WorkItem {
+  position: relative;
+  flex-grow: 1;
+  padding: 3em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: black;
+}
+
+.stackIndex-wrapper {
+  display: flex;
+  height: 300px;
+}
+
+.stackIndex-wrapper:hover { 
+  transform: translateY(-5px);
+  transition-timing-function: ease-out;
+  transition: all 200ms linear;
+  cursor: pointer;
+}
+
+.stackIndex-wrapper:hover > .WorkItem > .depthBar {
+  border-top-color: white;
+  transition: all 200ms linear;
+}
+
+/* .stackIndex-wrapper:hover > .WorkItem > .WorkImageContainer > .WorkImage {
+  transform: scale(1.05);
+  transition: all 200ms linear;
+} */
+
+.depthBar {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: -5px;
+  box-sizing: border-box;
+  border-top: 5px solid;
+  border-top-color: transparent;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  height: 0;
+}
+
+.WorkImageContainer {
+  display: grid;
+  overflow: hidden;
+}
+
+.WorkImage {
+  height: inherit;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 300ms ease-in-out;
+}
+
+.WorkTitleContainer {
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  text-align: start;
+  margin: 0 0 0 1em;
+
+}
+
+.work-title {
+  /* grid-area: heading; */
+  font-size: 2em;
+  font-family: Inter-Bold;
+  color: white;
+  margin-bottom: 0;
+}
+
+.work-type {
+  /* grid-area: subheading; */
+  font-family: Inter-Bold;
+  color: #3BE2D8;
+}
+
+.work-body {
+  /* grid-area: body; */
+  margin-top: 1em;
+  font-family: Body-Primary;
+  color: #808080;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
   }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.no-margin {
+  margin: 0;
+}
+
+@media only screen and (max-width: 700px) {
   
   .WorkContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    margin-top: 20px;
+    padding: 0;
   }
 
   .WorkItem {
-    padding: 3em;
-    margin-top: 2em;
-    display: flex;
-    flex-direction: column;
-    background-color: black;
+    padding: 1.5em;
   }
-
-  .WorkImageContainer {
-    height: 50vh;
-    width: 40vw;
-    overflow: hidden;
-    cursor: pointer;
-  }
-
-  .WorkImage {
-    height: inherit;
-    background-image: url("../Assets/Images/CookieCartel/cookie-cartel-img.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition: all 300ms ease-in-out;
-  }
-
-  .WorkImage:hover {
-    transform: scale(1.05);
-  }
-
-  .WorkTitleContainer {
-    text-align: start;
-  }
-  
-  .work-title {
-    font-size: 2.5em;
-    font-family: Inter-Bold;
-    color: white;
-    margin-bottom: 0;
-  }
-
-  .work-type {
-    font-family: Inter-Bold;
-    color: #3BE2D8;
-  }
-
-  .work-body {
-    margin-top: 2em;
-    font-family: Lato-Regular;
-    color: #808080;
-  }
-  
-  .App-link {
-    color: #61dafb;
-  }
-  
-  @keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-
-  .no-margin {
-    margin: 0;
-  }
-
-  /* Fonts */
-
-  @font-face {
-    font-family: "Inter-Regular";
-    src: local("Inter"),
-    url("../Assets/Fonts/Inter/Inter-Regular.otf") format("truetype");
-  }
-  
-  @font-face {
-    font-family: "Inter-Bold";
-    src: local("Inter"),
-    url("../Assets/Fonts/Inter/Inter-Bold.otf") format("truetype");
-  }
-
-  @font-face {
-    font-family: "Lato-Regular";
-    src: local("Lato"),
-    url("../Assets/Fonts/Lato/Lato-Regular.ttf") format("truetype");
-  }
-  
+}

@@ -1,37 +1,40 @@
 import '../Styles/Work.css';
 import React from 'react';
 import { useHistory } from 'react-router-dom';
+import { workItems } from '../Data/WorkData';
+import { render } from '@testing-library/react';
 
 
 const Work = React.forwardRef((props, ref) => {
   const history = useHistory();
   const handleOnClick = (address) => history.push(`/${address}`);
 
+  const workItemRender = () => workItems.map((item) =>
+  <div className="stackIndex-wrapper">
+    <div className="WorkItem">
+      <div className="WorkImageContainer">
+        <div className="WorkImage" onClick={() => handleOnClick('cookiecartel')} style={{ backgroundImage: `url(${process.env.PUBLIC_URL + item.imgPath})` }} />
+      </div>
+      <div className="WorkTitleContainer">
+        <div className="work-title">{item.title}</div>
+        <div className="work-type">{item.subtitle}</div>
+        <div className="work-body">{item.body}</div>
+      </div>
+      <div className="depthBar"></div>
+    </div>
+  </div>
+  );
+
   return (
     <div ref={ref} className="Work">
+      {/* <div className="NavBar">
+        <div className="NavBarLogo"/>
+      </div> */}
+      {/* <div className="NavBtn"/>       TODO : navigation button */}
       <div className="WorkContainer">
-        <div className="WorkItem">
-          <div className="WorkImageContainer">
-            <div className="WorkImage" onClick={() => handleOnClick('cookiecartel')}/>
-          </div>
-          <div className="WorkTitleContainer">
-            <p className="work-title">The Cookie Cartel</p>
-            <p className="work-type">Web interface design</p>
-            <p className="work-body">Created a web design for an e-commerce website in the F&B industry. </p>
-          </div>
-        </div>
-        <div className="WorkItem">
-          <div className="WorkImageContainer">
-          <div className="WorkImage" onClick={() => handleOnClick('work')}/>
-          </div>
-          <div className="WorkTitleContainer">
-            <p className="work-title">The Cookie Cartel</p>
-            <p className="work-type">Web interface design</p>
-            <p className="work-body">Created a web design for an e-commerce website in the F&B industry. </p>
-          </div>
-        </div>
+        {workItemRender()}
       </div>
-      {/* <img src={more} className="more-icon" /> */}
+      {/* <div className="NavBtn"/>       TODO : navigation button */}
     </div>
   );
 });

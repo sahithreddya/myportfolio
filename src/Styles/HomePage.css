@@ -1,21 +1,29 @@
+@import './Fonts.css';
+
 .HomePage {
   /* text-align: center; */
   background-color: black;
   display: grid;
   grid-template-areas:
+    "logo logo"
     "intro menu"
     "more more";
-  grid-template-rows: 1fr 10vh;
+  grid-template-rows: 5em 1fr 10vh;
   grid-gap: 10px;
+  height: 100vh;
+  width: 100vw;
 }
 
 .page-img {
   max-width: 100vw;
-  max-height: 40vh;
+  /* max-height: 40vh; */
+  height: 100vh;
   pointer-events: none;
   grid-column: 1 / -1;
   grid-row: 1 / span 1;
-  background-image: linear-gradient(transparent, black), url('../Assets/Images/STARS.png');
+  /* background-image: linear-gradient(transparent, black), url('../Assets/Images/STARS.png'); */
+  background: linear-gradient(rgba(0,0,0,.80), rgba(0,0,0,.80)), url('../Assets/Images/ikat pattern.png');
+  background-size: 7em;
 }
 
 .more-icon {
@@ -55,41 +63,77 @@
   color: white;
 }
 
+.qwe {
+  /* grid-area: logo; */
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  justify-self: center;
+  /* height: 4em; */
+  background: url('../Assets/Images/Logo + Name.svg') no-repeat 0 0;
+  background-repeat: no-repeat;
+}
+
+.HeaderBar {
+  grid-area: logo;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  justify-content: center;
+  height: 4em;
+  z-index: 10;
+}
+
+.HeaderLogo {
+  position: relative;
+  background-position: 50% 50%;
+  background: url('../Assets/Images/Logo + Name.svg') no-repeat 0 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 15;
+  height: inherit;
+  margin-left: 10px;
+}
+
 .Intro {
+  margin-top: 20vh;
   grid-area: intro;
-  align-self: center;
-  margin-left: 10vw;
+  align-self: start;
+  margin-left: 15vw;
   margin-right: 5vw;
 }
 
 .Menu {
+  margin-top: 20vh;
   grid-area: menu;
   display: grid;
   grid-template-columns: auto 1fr;
-  align-content: center;
+  align-self: start;
   justify-self: end;
-  margin-right: 10vw;
+  margin-right: 15vw;
 }
 
 .hello-class {
   color: white;
-  font-size: 3.5em;
+  font-size: 5em;
+  margin-top: 0;
+  margin-bottom: 0;
   font-family: Inter-Bold;
 }
 
 .hello-body {
-  font-family: Lato-Regular;
+  font-family: Body-Primary;
   font-size: 1.5em;
-  color: #3be2d8;
+  color: #7FE2DC;
   max-width: 600px;
 }
 
 .menu-class {
   margin-top: 0;
   margin-bottom: 0.5em;
-  font-size: 3.5em;
+  font-size: 5em;
   font-family: Inter-Bold;
-  color: black;
+  color: rgba(0,0,0,0);
   -webkit-text-stroke: 2px #664771;
   cursor: pointer;
 }
@@ -130,45 +174,49 @@
 @media only screen and (max-width: 700px) {
   .HomePage {
     grid-template-areas:
+      "logo"
       "intro"
       "menu"
       "more";
-    grid-template-rows: 1fr 1fr 10vh;
+    grid-template-rows: 5em 1fr 1fr 10vh;
   }
 
+  .page-img {
+    max-width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    background-size: 7em;
+  }
+  
   .Intro {
     margin-left: 3vw;
     max-width: 100vw;
+    margin-top: 2vh;
+  }
+
+  .hello-class {
+    font-size: 4em;
+  }
+
+  .hello-body {
+    font-size: 1.5em;
   }
 
   .Menu {
+    margin-top: 5vh;
     margin-right: 0;
     justify-self: start;
     margin-left: 4vw;
     align-content: end;
   }
 
+  .menu-class {
+    font-size: 3em;
+  }
+
   .more-icon {
     height: 4em;
   }
-}
-
-/* Fonts */
-
-@font-face {
-  font-family: "Inter-Regular";
-  src: local("Inter"),
-    url("../Assets/Fonts/Inter/Inter-Regular.otf") format("truetype");
-}
-
-@font-face {
-  font-family: "Inter-Bold";
-  src: local("Inter"),
-    url("../Assets/Fonts/Inter/Inter-Bold.otf") format("truetype");
-}
-
-@font-face {
-  font-family: "Lato-Regular";
-  src: local("Lato"),
-    url("../Assets/Fonts/Lato/Lato-Regular.ttf") format("truetype");
 }

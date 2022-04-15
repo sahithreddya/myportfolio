@@ -1,0 +1,25 @@
+/* Fonts */
+
+@font-face {
+    font-family: "Inter-Regular";
+    src: local("Inter"),
+      url("../Assets/Fonts/Inter/Inter-Regular.otf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "Inter-Bold";
+    src: local("Inter"),
+      url("../Assets/Fonts/AirbnbCereal/AirbnbCereal-ExtraBold.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "Body-Primary";
+    src: local("Lato"),
+      url("../Assets/Fonts/AirbnbCereal/AirbnbCereal-Book.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Body-Primary-Medium";
+    src: local("Lato"),
+      url("../Assets/Fonts/AirbnbCereal/AirbnbCereal-Medium.ttf") format("truetype");
+  }
