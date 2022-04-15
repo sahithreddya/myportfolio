@@ -3,6 +3,7 @@ import './Home.css';
 
 import HomePage from '../Components/HomePage';
 import Work from '../Components/Work';
+import Separator from '../Components/Separator';
 import { useRef } from 'react';
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
@@ -11,8 +12,8 @@ import { getFirestore, collection, getDocs } from 'firebase/firestore/lite';
 
 const Home = () => {
   const ref = useRef();
-  const scroll = () => {console.log("test"); ref?.current?.scrollIntoView({ behavior: "smooth" })};
-  const test = () => {console.log("test func")};
+  const scroll = () => ref?.current?.scrollIntoView({ behavior: "smooth" });
+  // const test = () => {console.log("test func")};
 
   // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -47,7 +48,8 @@ logEvent(analytics, 'app_initialized');
   return (
     <div className="Home">
       <HomePage scrollFunc={() => scroll()} test={() => test()}/>
-      {/* <Work ref={ref}/> */}
+      <Separator/>
+      <Work ref={ref}/>
     </div>
   );
 }
