@@ -1,0 +1,55 @@
+@import './Fonts.css';
+
+.footer {
+  height: 20em;
+  /* background: linear-gradient(rgba(0,0,0,.70), rgba(0,0,0,.70)), url('../Assets/Images/ikat pattern.png');
+  background-size: 7em; */
+}
+
+.footer-content {
+  margin-left: 30vw;
+}
+
+.name {
+  color: white;
+  font-family: Inter-Bold;
+  font-size: 2em;
+  letter-spacing: 3px;
+}
+
+.info {
+  color: #7FE2DC;
+  font-family: Body-Primary-Medium;
+  cursor: pointer;
+  max-width: 250px;
+}
+
+.social {
+  margin-top: 3em;
+  width: 400px;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  font-family: Body-Primary-Medium;
+  color: white;
+}
+
+.social div:nth-child(even) {
+  color: #7FE2DC;
+}
+
+.social div:nth-child(odd) {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+
+  .footer-content {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .social {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

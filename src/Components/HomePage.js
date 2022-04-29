@@ -10,9 +10,6 @@ const HomePage = React.forwardRef((props, ref) => {
   return (
     <div ref={ref} className="HomePage">
       <div className='page-img'/>
-      <div className="HeaderBar">
-        <div className="HeaderLogo"/>
-      </div>
       <div className='Intro'>
         <p className='hello-class'>Hello, <br/> I'm Sahith.</p>
         <p className='hello-body'>I'm an aspiring UX designer looking to solve problems and create great experiences for users.</p>

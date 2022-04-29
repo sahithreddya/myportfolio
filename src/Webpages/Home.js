@@ -4,11 +4,12 @@ import './Home.css';
 import HomePage from '../Components/HomePage';
 import Work from '../Components/Work';
 import Separator from '../Components/Separator';
+import Footer from '../Components/Footer';
 import { useRef } from 'react';
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics, logEvent } from "firebase/analytics";
-import { getFirestore, collection, getDocs } from 'firebase/firestore/lite';
+// import { getFirestore, collection, getDocs } from 'firebase/firestore/lite';
 
 const Home = () => {
   const ref = useRef();
@@ -33,23 +34,27 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
-const db = getFirestore(app);
+// const db = getFirestore(app);
 
-async function getTestdata(db) {
-  const testCol = collection(db, 'test-collection');
-  const testData = await getDocs(testCol);
-  const cityList = testData.docs.map(doc => doc.data());
-  console.log(cityList);
-}
+// async function getTestdata(db) {
+//   const testCol = collection(db, 'test-collection');
+//   const testData = await getDocs(testCol);
+//   const cityList = testData.docs.map(doc => doc.data());
+//   console.log(cityList);
+// }
 
-getTestdata(db);
+// getTestdata(db);
 logEvent(analytics, 'app_initialized');
 
   return (
     <div className="Home">
+      <div className="HeaderBar">
+        <div className="HeaderLogo"/>
+      </div>
       <HomePage scrollFunc={() => scroll()} test={() => test()}/>
       <Separator/>
       <Work ref={ref}/>
+      <Footer/>
     </div>
   );
 }
