@@ -16,7 +16,7 @@ const Work = React.forwardRef((props, ref) => {
       <div className="WorkTitleContainer">
         <div className="work-title">{item.title}</div>
         <div className="work-type">{item.subtitle}</div>
-        <div className="work-body">{item.body}</div>
+        {/* <div className="work-body">{item.body}</div> */}
       </div>
       <div className="depthBar"></div>
     </div>

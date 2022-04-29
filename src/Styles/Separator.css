@@ -1,6 +1,9 @@
 .content {
-  background-color: black;
+  /* background-color: black; */
   height: 6em;
+  /* background-image: linear-gradient(#664771, black); */
+  /* background: linear-gradient(rgba(0,0,0,.70), rgba(0,0,0,.70)), url('../Assets/Images/ikat pattern.png');
+  background-size: 7em; */
 }
 
 /* .Seperator {

@@ -9,41 +9,16 @@
     /* "navbar navbar navbar" */
     "work work work"
     "footer footer footer";
-  background-image: linear-gradient(transparent, black),;
+  /* background-image: linear-gradient(transparent, black),; */
+  background-color: #1B1B1B;
   /* background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('../Assets/Images/ikat pattern.png');
   background-size: 7em; */
 }
-
-/* .NavBar {
-  position: sticky;
-  top: 0;
-  padding: 5px;
-  grid-area: navbar;
-  height: 4em;
-  background-color: #664771;
-  z-index: 10;
-}
-
-.NavBarLogo {
-  position: relative;
-  background: url('../Assets/Images/Logo + Name.svg') no-repeat 0 0;
-  background-repeat: no-repeat;
-  background-size: contain;
-  z-index: 15;
-  height: inherit;
-  margin-left: 10px;
-} */
 
 .NavBtn {
   grid-area: navbtn;
   width: 2em;
   background-color: #664771;
-}
-
-.Footer {
-  grid-area: footer;
-  height: 5em;
-  background-color: gray;
 }
 
 .WorkContainer {
@@ -60,7 +35,7 @@
   flex-grow: 1;
   padding: 3em;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto;
   background-color: black;
 }
 
@@ -116,7 +91,7 @@
   display: grid;
   grid-template-rows: auto auto 1fr;
   text-align: start;
-  margin: 0 0 0 1em;
+  margin: 1em 0 0 0;
 
 }
 
@@ -163,6 +138,12 @@
   }
 
   .WorkItem {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: none;
     padding: 1.5em;
+  }
+
+  .WorkTitleContainer {
+    margin: 1em 0 0 0;
   }
 }
