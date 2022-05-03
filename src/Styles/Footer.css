@@ -7,7 +7,7 @@
 }
 
 .footer-content {
-  margin-left: 30vw;
+  margin-left: 20vw;
 }
 
 .name {
@@ -41,7 +41,7 @@
   cursor: pointer;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1200px) {
 
   .footer-content {
     text-align: center;
