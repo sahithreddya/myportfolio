@@ -7,7 +7,7 @@
 
 .page-content {
   background-color: black;
-  padding: 10em 5em 5em 5em;
+  padding: 10em 10vw 5em 10vw;
   /* display: grid;
   grid-template-areas:
     "logo logo"
@@ -16,7 +16,7 @@
   grid-template-rows: 5em 1fr 10vh;
   grid-gap: 10px; */
   display: grid;
-  grid-template-rows: auto 20em 20em 1fr;
+  grid-template-rows: auto 1fr;
   /* height: 100vh; */
 }
 
@@ -93,4 +93,10 @@
   /* .Home {
     grid-template-rows: 100vh 4em 1fr;
   } */
+}
+
+@media only screen and (max-width: 500px) {
+  .page-title {
+    font-size: 4em;
+  }
 }
