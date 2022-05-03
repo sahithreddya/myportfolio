@@ -1,6 +1,6 @@
 
 const workItems = [{
-    title: "Retail Application",
+    title: "LinkApp",
     subtitle: "Mobile interface design",
     body: "Designed a mobile UX for a retail business application",
     imgPath: "Images/LinkApp/Contact-List.png"

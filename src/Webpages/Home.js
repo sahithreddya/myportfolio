@@ -1,10 +1,11 @@
 import React from 'react';
-import './Home.css';
+import './Styles/Home.css';
 
 import HomePage from '../Components/HomePage';
 import Work from '../Components/Work';
 import Separator from '../Components/Separator';
 import Footer from '../Components/Footer';
+import HeaderBar from '../Components/HeaderBar';
 import { useRef } from 'react';
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
@@ -48,9 +49,7 @@ logEvent(analytics, 'app_initialized');
 
   return (
     <div className="Home">
-      <div className="HeaderBar">
-        <div className="HeaderLogo"/>
-      </div>
+      <HeaderBar/>
       <HomePage scrollFunc={() => scroll()} test={() => test()}/>
       <Separator/>
       <Work ref={ref}/>

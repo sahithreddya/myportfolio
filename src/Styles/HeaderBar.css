@@ -1,20 +1,13 @@
-.Home {
-  /* text-align: center; */
-  /* background-color: #1B1B1B; */
-  background: linear-gradient(rgba(0,0,0,.70), rgba(0,0,0,.70)), url('../Assets/Images/ikat pattern.png');
-  background-size: 7em;
-  display: grid;
-  grid-template-rows: 1px 100vh 6em 1fr 20em;
-}
-
 .HeaderBar {
   /* grid-area: logo; */
   position: sticky;
   top: 0;
-  padding: 5px;
+  padding: 12px 0 0 12px;
   justify-content: center;
   height: 4em;
   z-index: 10;
+  /* backdrop-filter: blur(3px);
+  background-color: rgba(1,1,1,0.5); */
   /* background-color: black; */
 }
 
@@ -25,11 +18,29 @@
   background-size: contain;
   z-index: 15;
   height: inherit;
-  margin-left: 10px;
+  /* margin: 10px 0 0 10px; */
+}
+
+@media only screen and (max-width: 1200px) {
+
+  .HeaderBar {
+    padding: 12px;
+  }
+
+  .HeaderLogo {
+    background-position: center;
+    margin: 0;
+  }
 }
 
 @media only screen and (max-width: 700px) {
-  /* .Home {
-    grid-template-rows: 100vh 4em 1fr;
-  } */
+
+  .HeaderBar {
+    padding: 0;
+  }
+
+  .HeaderLogo {
+    background-position: center;
+    margin: 0;
+  }
 }
