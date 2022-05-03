@@ -3,13 +3,13 @@
   background-size: 7em;
   display: grid;
   grid-template-rows: 1px 1fr 20em;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .mirkwood-content {
   text-align: center;
   background-color: black;
-  padding: 10em 5em 5em 5em;
+  padding: 10em 10vw 5em 10vw;
 }
 
 .colorBarHorizontal {
@@ -95,4 +95,10 @@
   /* .Home {
     grid-template-rows: 100vh 4em 1fr;
   } */
+}
+
+@media only screen and (max-width: 500px) {
+  .mirkwood-title {
+    font-size: 9em;
+  }
 }
