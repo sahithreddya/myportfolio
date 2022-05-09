@@ -9,7 +9,7 @@ const Work = React.forwardRef((props, ref) => {
   // const handleOnClick = (value) => history.push({ path: `/${value.title}`, state: { val: "test data" }});
 
   const workItemRender = () => workItems.map((item) =>
-  <Link to={`/${item.title}`} style={{ textDecoration: "none"}}>
+  <Link to={{pathname: `/${item.title}`}} style={{ textDecoration: "none"}}>
     <div className="stackIndex-wrapper">
       <div className="WorkItem">
         <div className="WorkImageContainer">
