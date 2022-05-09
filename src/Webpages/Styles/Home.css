@@ -1,8 +1,9 @@
 .Home {
   /* text-align: center; */
   /* background-color: #1B1B1B; */
-  background: linear-gradient(rgba(0,0,0,.70), rgba(0,0,0,.70)), url('../../Assets/Images/ikat\ pattern.png');
+  background: linear-gradient(rgba(0,0,0,.95), rgba(0,0,0,.95)), url('../../Assets/Images/ikat\ pattern.png');
   background-size: 7em;
+  background-attachment: fixed;
   display: grid;
   grid-template-rows: 1px 100vh 6em 1fr 20em;
 }
