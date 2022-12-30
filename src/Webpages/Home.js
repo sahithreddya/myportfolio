@@ -11,7 +11,6 @@ import { useRef } from 'react';
 import { initializeApp } from "firebase/app";
 import { getAnalytics, logEvent } from "firebase/analytics";
 // import { getFirestore, collection, getDocs } from 'firebase/firestore/lite';
-
 const Home = () => {
   const ref = useRef();
   const scroll = () => ref?.current?.scrollIntoView({ behavior: "smooth" });
@@ -50,7 +49,7 @@ logEvent(analytics, 'app_initialized');
   return (
     <div className="Home">
       <HeaderBar/>
-      <HomePage scrollFunc={() => scroll()} test={() => test()}/>
+      <HomePage scrollFunc={() => scroll()} openLink={(url) => {console.log("val is "+url); window.open(url);}} test={() => test()}/>
       <Separator/>
       <Work ref={ref}/>
       <Footer/>
