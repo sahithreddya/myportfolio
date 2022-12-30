@@ -1,6 +1,7 @@
 import '../Styles/HomePage.css';
 import more from '../Assets/Icons/more.svg';
 import React from 'react';
+import resume from '../Assets/Files/MyResume.pdf'
 // import { useHistory } from 'react-router-dom';
 
 const HomePage = React.forwardRef((props, ref) => {
@@ -20,7 +21,7 @@ const HomePage = React.forwardRef((props, ref) => {
         <p className='menu-serial'>02</p>
         <p className='menu-class'>About</p>
         <p className='menu-serial'>03</p>
-        <p className='menu-class'>Résumé</p>
+        <p className='menu-class' onClick={() => props.openLink(resume)}>Résumé</p>
       </div>
       <img src={more} onClick={props.scrollFunc} className="more-icon" alt="more-icon"/>
     </div>
