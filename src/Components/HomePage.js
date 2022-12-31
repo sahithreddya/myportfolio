@@ -19,7 +19,7 @@ const HomePage = React.forwardRef((props, ref) => {
       <div className='Intro'>
         <p className='hello-class'>Hello, <br/> I'm Sahith.</p>
         <p className='hello-body'>I'm an aspiring UX designer looking to solve problems and create great experiences for users.</p>
-        <a className='profile-link' href='https://www.linkedin.com/in/sahithreddya/'><br/><FaLink style={{verticalAlign: '-0.125em', marginRight: "1em"}} color="#664771"/> Linkedin</a>
+        <a className='profile-link' href='https://www.linkedin.com/in/sahithreddya/'><br/><FaLink style={{verticalAlign: '-0.125em', marginRight: "1em"}} color="#664771"/> LinkedIn</a>
         <a className='profile-link' href='https://www.behance.net/sahithreddya'><br/><FaLink style={{verticalAlign: '-0.125em', marginRight: "1em"}} color="#664771"/> Behance</a>
       </div>
       <div className='Menu'>

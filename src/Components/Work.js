@@ -21,6 +21,7 @@ const Work = React.forwardRef((props, ref) => {
           {/* <div className="work-body">{item.body}</div> */}
         </div>
         <div className="depthBar"></div>
+        {/* <div className="depthBarSide"></div> Better hover*/}
       </div>
     </div>
   </Link>
