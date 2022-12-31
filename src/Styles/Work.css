@@ -39,7 +39,7 @@
 }
 
 .stackIndex-wrapper:hover { 
-  transform: translateY(-5px);
+  transform: scale(1.03) translateY(-10px);
   transition-timing-function: ease-out;
   transition: all 100ms linear;
   cursor: pointer;
@@ -47,11 +47,17 @@
 
 .stackIndex-wrapper > .WorkItem > .depthBar {
   transition: all 100ms linear;
+  bottom: 0;
+  border-left: 0px solid transparent;
+  border-right: 0px solid transparent;
 }
 
 .stackIndex-wrapper:hover > .WorkItem > .depthBar {
   border-top-color: white;
   transition: all 100ms linear;
+  bottom: -5px;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
 }
 
 /* .stackIndex-wrapper:hover > .WorkItem > .WorkImageContainer > .WorkImage {
@@ -63,13 +69,14 @@
   position: absolute;
   left: 0px;
   right: 0px;
-  bottom: -5px;
+  bottom: 0;
   box-sizing: border-box;
   border-top: 5px solid;
-  border-top-color: transparent;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
+  border-top-color: white;
+  border-left: 0px solid transparent;
+  border-right: 0px solid transparent;
   height: 0;
+  z-index: -1;
 }
 
 .WorkImageContainer {
