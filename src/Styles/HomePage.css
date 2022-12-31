@@ -6,9 +6,10 @@
   display: grid;
   grid-template-areas:
     "logo logo"
+    "marquee marquee"
     "intro menu"
     "more more";
-  grid-template-rows: 5em 1fr 10vh;
+  grid-template-rows: 5em 2em 1fr 10vh;
   grid-gap: 10px;
   height: 100vh;
   /* width: 100vw; */
@@ -25,6 +26,15 @@
   /* background: linear-gradient(rgba(0,0,0,.70), rgba(0,0,0,.70)), url('../Assets/Images/ikat pattern.png'); */
   background-color: black;
   /* background-size: 7em; */
+}
+
+.in-progress {
+  grid-area: marquee;
+  height: 2em;
+  line-height: 2em;
+  border-top: solid 10px;
+  border-bottom: solid 10px;
+  border-image: repeating-linear-gradient( -75deg, yellow, yellow 10px, black 10px, black 20px) 20;;
 }
 
 .more-icon {
@@ -87,6 +97,15 @@
   margin-right: 5vw;
 }
 
+.profile-link {
+  font-family: Body-Primary-Medium;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: bold;
+  color: white;
+  margin-top: 1em;
+}
+
 .menu-class {
   margin-top: 0;
   margin-bottom: 0.5em;
@@ -135,10 +154,11 @@
   .HomePage {
     grid-template-areas:
       "logo"
+      "marquee"
       "intro"
       "menu"
       "more";
-    grid-template-rows: 5em 1fr 1fr 10vh;
+    grid-template-rows: 5em 2em 1fr 1fr 10vh;
   }
 
   .page-img {
