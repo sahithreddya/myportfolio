@@ -1,0 +1,136 @@
+.BG-page-container {
+  background: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)), url('../../Assets/Images/ikat\ pattern.png');
+  background-size: 7em;
+  display: grid;
+  background-attachment: fixed;
+  grid-template-rows: 1px 1fr 20em;
+}
+
+.BG-page-content {
+  background-color: black;
+  padding: 10em 10vw 5em 10vw;
+  /* display: grid;
+  grid-template-areas:
+    "logo logo"
+    "intro menu"
+    "more more";
+  grid-template-rows: 5em 1fr 10vh;
+  grid-gap: 10px; */
+  display: grid;
+  grid-template-rows: auto 1fr;
+  /* height: 100vh; */
+}
+
+.colorBarHorizontal {
+  width: 80%;
+  height: 0.3em;
+  background-color: #664771;
+  margin: 2em auto 0 auto;
+}
+
+.colorBarHorizontal:nth-child(even) {
+  background-color: #7FE2DC;
+  margin-top: 0;
+}
+
+.BG-page-title {
+  color: white;
+  font-size: 5em;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Inter-Bold;
+}
+
+.BG-page-subtitle {
+  font-family: Body-Primary;
+  font-size: 1.5em;
+  color: #7FE2DC;
+  max-width: 600px;
+  margin: 0;
+}
+
+.BG-page-body-container {
+  margin-top: 5em;
+}
+
+.BG-page-body-about-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.BG-page-body-about {
+  margin: 0;
+  font-family: Inter-Bold;
+  color: white;
+  font-size: 1.5em;
+}
+
+.BG-page-body-about-line {
+  /* width: 100%; */
+  flex: 1;
+  overflow: hidden;
+  margin: 0 0 0 1em;
+  height: 3px;
+  background-color: #664771;
+  /* margin: 2em auto 0 auto; */
+}
+
+.BG-page-body {
+  /* margin-top: 1em; */
+  flex: 1;
+  font-size: 1.2em;
+  font-family: Body-Primary;
+  color: #808080;
+  margin-bottom: 3em;
+}
+
+.BG-img-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2em;
+}
+
+.BG-carousel {
+  /* flex: 1; */
+  width: 300px;
+  align-self: center;
+}
+
+.BG-carousel:nth-child(odd) {
+  margin-right: 1em;
+}
+
+.BG-carousel:nth-child(even) {
+  margin-left: 1em;
+}
+
+.BG-carousel-text {
+  align-self: center;
+}
+
+@media only screen and (min-width: 700px) {
+  .BG-page-container {
+    padding: 0 10vw;
+  }
+
+  .BG-carousel {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .BG-img-container:nth-child(odd) {
+    flex-direction: column;
+  }
+
+  .BG-img-container:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .BG-page-title {
+    font-size: 4em;
+  }
+}

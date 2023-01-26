@@ -6,6 +6,12 @@ const workItems = [{
     imgPath: "Images/LinkApp/Contact-List.png"
 },
 {
+    title: "Beagle",
+    subtitle: "Product Study",
+    body: "-",
+    imgPath: "Images/Beagle/Beagle-Picture.png"
+},
+{
     title: "The Cookie Cartel",
     subtitle: "Web interface design",
     body: "Created a web design for an e-commerce website in the F&B industry.",
@@ -16,12 +22,6 @@ const workItems = [{
     subtitle: "Logo/Brand design",
     body: "-",
     imgPath: "Images/Pilgrim/Pilgrim-img.png"
-},
-{
-    title: "Beagle",
-    subtitle: "Product Study",
-    body: "-",
-    imgPath: "Images/Beagle/Beagle-Picture.png"
 },
 {
     title: "Figma project",
