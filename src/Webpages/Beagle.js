@@ -6,6 +6,8 @@ import { useEffect } from "react";
 
 import beagleimg from '../Assets/Images/Beagle/Beagle.png';
 
+// TO DO - Decrease padding for mobile view
+
 const Beagle =  React.forwardRef((props, ref) => {
 
     // added since scroll position from previous page was being used
