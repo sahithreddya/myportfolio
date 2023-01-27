@@ -6,8 +6,8 @@
   justify-content: center;
   height: 4em;
   z-index: 10;
-  /* backdrop-filter: blur(3px);
-  background-color: rgba(1,1,1,0.5); */
+  backdrop-filter: blur(3px);
+  background-color: rgba(1,1,1,0.5);
   /* background-color: black; */
 }
 
@@ -36,7 +36,7 @@
 @media only screen and (max-width: 700px) {
 
   .HeaderBar {
-    padding: 0;
+    padding: 12px 0;
   }
 
   .HeaderLogo {
