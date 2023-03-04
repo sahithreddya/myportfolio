@@ -2,7 +2,6 @@ import React from 'react';
 import './Styles/AboutMe.css'
 import HeaderBar from '../Components/HeaderBar.js'
 import Footer from '../Components/Footer.js';
-import { FaLink } from 'react-icons/fa';
 import { onLinkClick } from '../Components/Footer.js';
 import { useEffect } from "react";
 

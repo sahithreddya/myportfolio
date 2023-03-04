@@ -1,7 +1,6 @@
 import '../Styles/HomePage.css';
 import more from '../Assets/Icons/more.svg';
 import React, { useEffect } from 'react';
-import { FaLink } from 'react-icons/fa';
 import resume from '../Assets/Files/MyResume.pdf'
 // import Marquee from "react-fast-marquee";
 import { Link, useLocation } from "react-router-dom";
@@ -12,10 +11,10 @@ const HomePage = React.forwardRef((props, ref) => {
   let location = useLocation();
 
   useEffect(() => {
-    if((location?.state?.to) == 'work') {
+    if((location?.state?.to) === 'work') {
       props.scrollFunc()
     }
-    if(((location?.state?.from) == '/') && (location?.state?.to) == 'home') {
+    if(((location?.state?.from) === '/') && (location?.state?.to) === 'home') {
       window.scrollTo({top: 0, behavior: "smooth"});
     }
   });

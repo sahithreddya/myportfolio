@@ -2,12 +2,8 @@ import React from 'react';
 import './Styles/LinkApp.css'
 import HeaderBar from '../Components/HeaderBar.js'
 import Footer from '../Components/Footer';
-// import { useLocation } from 'react-router-dom';
 import { useEffect } from "react";
-// import ImageViewer from '../Components/ImageViewer';
 import { LinkAppImgSources } from '../Data/ImageExport.js';
-// import { Carousel } from 'react-responsive-carousel';
-// import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 import { Carousel } from "@fancyapps/ui/dist/carousel/carousel.esm.js";
 import { Fancybox } from "@fancyapps/ui/dist/fancybox/fancybox.esm.js";
@@ -15,9 +11,6 @@ import { Thumbs } from "@fancyapps/ui/dist/carousel/carousel.thumbs.esm.js";
 import "@fancyapps/ui/dist/carousel/carousel.thumbs.css";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
 import "@fancyapps/ui/dist/carousel/carousel.css";
-
-import img1 from '../Assets/Images/SpotifyLyrics/Spotify-PC-lyrics.png';
-
 
 const LinkApp = React.forwardRef((props, ref) => {
     // let location = useLocation();
@@ -50,7 +43,6 @@ const LinkApp = React.forwardRef((props, ref) => {
         // Your custom options
     });
 
-    // let getImages = (type) => LinkAppImgSources[type].map((val) => <img alt="app screenshots" src={val.src} />);
     let getImages = (type) => LinkAppImgSources[type].map((val) => <img style={{ height: "fit-content" }} class="f-carousel__slide" data-fancybox data-thumb={val.src} alt="app screenshots" src={val.src} />);
 
 
@@ -61,8 +53,6 @@ const LinkApp = React.forwardRef((props, ref) => {
                 <div>
                     <p className='LA-page-title'>LinkApp</p>
                     <p className='LA-page-subtitle'>Mobile Interface Design</p>
-                    {/* <div className='colorBarHorizontal'/>
-                    <div className='colorBarHorizontal'/> */}
                 </div>
                 <div className='LA-page-body-container'>
                     <p className='LA-page-body' style={{ fontStyle: "italic", marginTop: 0, marginBottom: "2em" }}>P.S: Because of my NDA, I will be sharing limited information regarding this project. The screens I’ve included below are done so with permission. If you need more context, please contact me at <b>sahithreddy.a@gmail.com</b>.</p>
@@ -103,9 +93,6 @@ const LinkApp = React.forwardRef((props, ref) => {
                                 </div>
                             </div>
                         </div>
-                        {/* <Carousel className="LA-carousel" infiniteLoop={true} showThumbs={false} dynamicHeight={true} style={styles}>
-                            {getImages("merchantOptions")}
-                        </Carousel> */}
                     </div>
                 </div>
             </div>
