@@ -25,7 +25,7 @@
 .WorkItem {
   position: relative;
   flex-grow: 1;
-  padding: 3em;
+  padding: 1.5em;
   display: grid;
   grid-template-rows: 1fr auto;
   background-color: black;

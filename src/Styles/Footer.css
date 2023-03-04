@@ -1,7 +1,7 @@
 @import './Fonts.css';
 
 .footer {
-  height: 20em;
+  height: 22em;
   /* background: linear-gradient(rgba(0,0,0,.70), rgba(0,0,0,.70)), url('../Assets/Images/ikat pattern.png');
   background-size: 7em; */
 }
@@ -14,7 +14,16 @@
   color: white;
   font-family: Inter-Bold;
   font-size: 2em;
+  margin-top: 0;
   letter-spacing: 3px;
+}
+
+.footer-text {
+  color: white;
+  font-family: Inter-Regular;
+  font-size: 1em;
+  margin-top: 3em;
+  /* letter-spacing: 3px; */
 }
 
 .info {

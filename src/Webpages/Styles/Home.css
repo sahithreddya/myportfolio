@@ -5,7 +5,7 @@
   background-size: 7em;
   background-attachment: fixed;
   display: grid;
-  grid-template-rows: 1px 100vh 6em 1fr 20em;
+  grid-template-rows: 1px 100vh 6em 1fr 22em;
 }
 
 @media only screen and (min-width: 700px) {
