@@ -6,10 +6,10 @@
   display: grid;
   grid-template-areas:
     "logo logo"
-    "marquee marquee"
+    /* "marquee marquee" */
     "intro menu"
     "more more";
-  grid-template-rows: 5em 2em 1fr 10vh;
+  grid-template-rows: 5em 1fr 10vh;
   grid-gap: 10px;
   height: 100vh;
   /* width: 100vw; */
@@ -98,12 +98,18 @@
 }
 
 .profile-link {
+  width: fit-content;
+  cursor: pointer;
   font-family: Body-Primary-Medium;
   text-decoration: none;
   font-size: 1em;
   font-weight: bold;
   color: white;
   margin-top: 1em;
+}
+
+.profile-link:hover {
+  text-decoration: underline;
 }
 
 .menu-class {
@@ -154,11 +160,11 @@
   .HomePage {
     grid-template-areas:
       "logo"
-      "marquee"
+      /* "marquee" */
       "intro"
       "menu"
       "more";
-    grid-template-rows: 5em 2em 1fr 1fr 10vh;
+    grid-template-rows: 5em 1fr 1fr 10vh;
   }
 
   .page-img {
