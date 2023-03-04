@@ -3,7 +3,7 @@
   background-size: 7em;
   display: grid;
   background-attachment: fixed;
-  grid-template-rows: 1px 1fr 20em;
+  grid-template-rows: 1px 1fr 22em;
 }
 
 .LA-page-content {
@@ -110,9 +110,9 @@
 }
 
 @media only screen and (min-width: 700px) {
-  .LA-page-container {
+  /* .LA-page-container {
     padding: 0 10vw;
-  }
+  } */
 
   .LA-carousel {
     margin: 0;

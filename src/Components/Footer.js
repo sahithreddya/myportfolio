@@ -3,26 +3,7 @@ import React from 'react';
 
 const Footer = React.forwardRef((props, ref) => { 
 
-  return (
-    <div ref={ref} className='footer'>
-      <div className='footer-content'>
-        <p className='name'>SAHITH REDDY</p>
-        <p className='info' onClick={() => onLinkClick("city")}>Hyderabad</p>
-        <p className='info' onClick={() => onLinkClick("email")}>sahithreddy.a@gmail.com</p>
-        <p className='info' onClick={() => onLinkClick("phone")}>(+91) 9052052849</p>
-        <div className='social' id="social">
-          <div onClick={() => onLinkClick("linkedin")}>LINKEDIN</div>
-          <div>/</div>
-          <div onClick={() => onLinkClick("medium")}>MEDIUM</div>
-          <div>/</div>
-          <div onClick={() => onLinkClick("github")}>GITHUB</div>
-        </div>
-      </div>
-    </div>
-  );
-});
-
-const onLinkClick = (context) => {
+  const onLinkClick = (context) => {
   switch(context) {
     case "city":
       window.open("https://en.wikipedia.org/wiki/Hyderabad");
@@ -47,5 +28,24 @@ const onLinkClick = (context) => {
   }
 
 }
+  return (
+    <div ref={ref} className='footer'>
+      <div className='footer-content'>
+        <p className='footer-text'>design and built by</p>
+        <p className='name'>SAHITH REDDY</p>
+        <p className='info' onClick={() => onLinkClick("city")}>Hyderabad</p>
+        <p className='info' onClick={() => onLinkClick("email")}>sahithreddy.a@gmail.com</p>
+        <p className='info' onClick={() => onLinkClick("phone")}>(+91) 9052052849</p>
+        <div className='social' id="social">
+          <div onClick={() => onLinkClick("linkedin")}>LINKEDIN</div>
+          <div>/</div>
+          <div onClick={() => onLinkClick("medium")}>MEDIUM</div>
+          <div>/</div>
+          <div onClick={() => onLinkClick("github")}>GITHUB</div>
+        </div>
+      </div>
+    </div>
+  );
+});
 
 export default Footer;

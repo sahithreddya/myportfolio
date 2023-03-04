@@ -3,7 +3,7 @@
   background-size: 7em;
   background-attachment: fixed;
   display: grid;
-  grid-template-rows: 1px 1fr 20em;
+  grid-template-rows: 1px 1fr 22em;
   /* height: 100vh; */
 }
 
