@@ -12,28 +12,47 @@ const workItems = [{
     imgPath: "Images/Beagle/Beagle-Picture.png"
 },
 {
-    title: "The Cookie Cartel",
-    subtitle: "Web interface design",
-    body: "Created a web design for an e-commerce website in the F&B industry.",
-    imgPath: "Images/CookieCartel/cookie-cartel-img.png"
-},
-{
-    title: "Pilgrim",
-    subtitle: "Logo/Brand design",
+    title: "Hyderabad Tourism Website",
+    subtitle: "UI/UX Design",
     body: "-",
-    imgPath: "Images/Pilgrim/Pilgrim-img.png"
+    imgPath: "Images/HydTT/HydTT-pic.png"
 },
-{
-    title: "Figma project",
-    subtitle: "Prototyping and Animation",
-    body: "-",
-    imgPath: "Images/FigmaPrototype/FigmaScenery.png"
-},
-{
-    title: "Spotify Lyrics",
-    subtitle: "UX design",
-    body: "-",
-    imgPath: "Images/SpotifyLyrics/Spotify-PC-Lyrics.png"
-}]
+// {
+//     title: "The Cookie Cartel",
+//     subtitle: "Web interface design",
+//     body: "Created a web design for an e-commerce website in the F&B industry.",
+//     imgPath: "Images/CookieCartel/cookie-cartel-img.png"
+// },
+// {
+//     title: "Pilgrim",
+//     subtitle: "Logo/Brand design",
+//     body: "-",
+//     imgPath: "Images/Pilgrim/Pilgrim-img.png"
+// },
+// {
+//     title: "Learning Figma project",
+//     subtitle: "Prototyping and Animation",
+//     body: "-",
+//     imgPath: "Images/FigmaPrototype/FigmaScenery.png"
+// },
+// {
+//     title: "Spotify Lyrics",
+//     subtitle: "UI design",
+//     body: "-",
+//     imgPath: "Images/SpotifyLyrics/Spotify-PC-Lyrics.png"
+// },
+// {
+//     title: "Tourism Brand Logo",
+//     subtitle: "Logo design",
+//     body: "-",
+//     imgPath: "Images/HydTT/logo-square.png",
+// },
+// {
+//     title: "Engineer's Week Logo",
+//     subtitle: "Logo design",
+//     body: "-",
+//     imgPath: "Images/Engg-Week/Front.png"
+// }
+]
 
 export { workItems };

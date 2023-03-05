@@ -37,7 +37,7 @@
   margin-top: 3em;
   max-width: 400px;
   display: grid;
-  grid-template-columns: repeat(5, auto);
+  grid-template-columns: repeat(7, auto);
   font-family: Body-Primary-Medium;
   color: white;
 }

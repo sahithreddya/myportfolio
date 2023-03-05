@@ -49,7 +49,7 @@ logEvent(analytics, 'app_initialized');
   return (
     <div className="Home">
       <HeaderBar/>
-      <HomePage scrollFunc={() => scroll()} openLink={(url) => {console.log("val is "+url); window.open(url);}} test={() => test()}/>
+      <HomePage scrollFunc={() => scroll()} openLink={(url) => window.open(url)} test={() => test()}/>
       <Separator/>
       <Work ref={ref}/>
       <Footer/>

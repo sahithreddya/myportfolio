@@ -8,7 +8,7 @@
 
 .BG-page-content {
   background-color: black;
-  padding: 10em 10vw 5em 10vw;
+  padding: 10em 15vw 5em;
   /* display: grid;
   grid-template-areas:
     "logo logo"
@@ -120,6 +120,10 @@
 }
 
 @media only screen and (max-width: 700px) {
+  .BG-page-content{
+    padding: 10em 5vw 5em;
+  }
+
   .BG-img-container:nth-child(odd) {
     flex-direction: column;
   }

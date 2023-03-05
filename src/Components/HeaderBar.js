@@ -1,12 +1,21 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import resume from '../Assets/Files/MyResume.pdf'
 import '../Styles/HeaderBar.css'
 
-const HeaderBar = () => {
+const HeaderBar = React.forwardRef((props, ref) => {
+    let location = useLocation();
+
     return (
-        <Link to="/" className="HeaderBar">
-            <div className="HeaderLogo" />
-        </Link>
+        <div className="HeaderBar">
+            <Link to="/" state={{from: location.pathname}} className="HeaderLogo" />
+            <div className='header-options'>
+                <Link to="/" state={{from: location.pathname, to: 'home'}}><p className='header-item'>Home</p></Link>
+                <Link to="/" state={{from: location.pathname, to: 'work'}}><p className='header-item'>Work</p></Link>
+                <Link to="/About" state={{from: location.pathname}}><p className='header-item'>About Me</p></Link>
+                <p onClick={() => window.open(resume)} className='header-item'>Résumé</p>
+            </div>
+        </div>
     );
-};
+});
 export default HeaderBar;
