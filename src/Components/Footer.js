@@ -41,6 +41,8 @@ const Footer = React.forwardRef((props, ref) => {
         <p className='info' onClick={() => onLinkClick("email")}>sahithreddy.a@gmail.com</p>
         <p className='info' onClick={() => onLinkClick("phone")}>+1 (443) 631-8332</p>
         <div className='social' id="social">
+          <div onClick={() => onLinkClick("behance")}>BEHANCE</div>
+          <div>/</div>
           <div onClick={() => onLinkClick("linkedin")}>LINKEDIN</div>
           <div>/</div>
           <div onClick={() => onLinkClick("medium")}>MEDIUM</div>
