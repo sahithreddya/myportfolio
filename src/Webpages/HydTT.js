@@ -31,7 +31,7 @@ const HydTT =  React.forwardRef((props, ref) => {
                         <p className='HTT-page-body-about'>About this project</p>
                         <div className='HTT-page-body-about-line'/>
                     </div>
-                    <p className='HTT-page-body'><a href='https://www.hyderabadtourism.travel/'>hyderabadtourism.travel</a> is a tourism website for the city Hyderabad, located in India. The website is maintained by HOLIDAYS DNA, a travel package and hotel booking agency. The website is an indirect advertising platform for their services pertaining to Hyderabad.</p>
+                    <p className='HTT-page-body'><a href='https://www.hyderabadtourism.travel/'>hyderabadtourism.travel</a> is a tourism website for the city of Hyderabad, located in India. The website is maintained by HOLIDAYS DNA, a travel package and hotel booking agency. The website is an indirect advertising platform for their services pertaining to Hyderabad. The current design is very bland and doesn't look like a tourism website. My goal was to redesign the website to make use of proper branding and images to evoke emotion in a potential customer as a tourism website should.</p>
                     <div className='HTT-page-body-about-container'>
                         <p className='HTT-page-body-about'>What I've learned</p>
                         <div className='HTT-page-body-about-line'/>
