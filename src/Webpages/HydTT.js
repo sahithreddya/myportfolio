@@ -31,14 +31,17 @@ const HydTT =  React.forwardRef((props, ref) => {
                         <p className='HTT-page-body-about'>About this project</p>
                         <div className='HTT-page-body-about-line'/>
                     </div>
-                    <p className='HTT-page-body'>HydTT is a browser extension that helps users find environmental and vegan-friendly alternatives to their product searches. The problem they’re trying to address is the challenge that currently comes with finding such sustainable alternative products online. I stumbled upon this product on the internet and it was a genre of product that I didn’t use before. I used this opportunity to study the product and note down my insights.</p>
+                    <p className='HTT-page-body'><a href='https://www.hyderabadtourism.travel/'>hyderabadtourism.travel</a> is a tourism website for the city of <a href='https://en.wikipedia.org/wiki/Hyderabad'>Hyderabad</a>, located in India. The website is maintained by HOLIDAYS DNA, a travel package and hotel booking agency. The website is an indirect advertising platform for their services pertaining to Hyderabad. The current design is very bland and doesn't look like a tourism website. My goal was to redesign the website to make use of proper branding and images to evoke emotion in a potential customer as a tourism website should.</p>
                     <div className='HTT-page-body-about-container'>
                         <p className='HTT-page-body-about'>What I've learned</p>
                         <div className='HTT-page-body-about-line'/>
                     </div>
                     <ul className='HTT-page-body'>
-                        <li>The prioritization of features important to the <b>vision and user experience v/s feasiliblity of the product</b></li>
-                        <li>How to <b>communicate design findings</b> and information to clients</li>
+                        <li>How to <b>communicate intent</b> through color, typeface, and logo branding</li>
+                        <li><b>Maintaining a design system in Figma</b> incorporated with the brand identity to keep consistency in designs</li>
+                        <li><b>Importance of SWOT analysis</b> to identify weaknesses and opportunities over competitors</li>
+                        <li>How to <b>create effective User Personas</b> to introduce customer needs into the design process</li>
+                        <li><b>Importance of prototyping</b> and building Low-Fidelity wireframes to gather initial feedback while keeping investment to a minimum</li>
                     </ul>
                     <div className='HTT-img-container'>
                         <img alt='homepage screenshot' style={{width: '100%'}} src={img}></img>

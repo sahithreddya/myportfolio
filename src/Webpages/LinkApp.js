@@ -53,7 +53,7 @@ const LinkApp = React.forwardRef((props, ref) => {
             <div className='LA-page-content'>
                 <div>
                     <p className='LA-page-title'>LinkApp</p>
-                    <p className='LA-page-subtitle'>Mobile Interface Design</p>
+                    <p className='LA-page-subtitle'>UI/UX Design</p>
                 </div>
                 <div className='LA-page-body-container'>
                     <p className='LA-page-body' style={{ fontStyle: "italic", marginTop: 0, marginBottom: "2em" }}>P.S: Because of my NDA, I will be sharing limited information regarding this project. The screens I’ve included below are done so with permission. If you need more context, please contact me at <b>sahithreddy.a@gmail.com</b>.</p>

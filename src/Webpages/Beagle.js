@@ -19,7 +19,10 @@ const Beagle = React.forwardRef((props, ref) => {
     });
 
     Fancybox.bind("[data-fancybox]", {
-        compact: () => window.matchMedia("(max-width: 100px)")
+        compact: () => window.matchMedia("(max-width: 100px)"),
+        Images: {
+            initialSize: "cover",
+        },
         // Your custom options
     });
 

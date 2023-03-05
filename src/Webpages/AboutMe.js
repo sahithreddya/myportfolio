@@ -29,9 +29,9 @@ const AboutMe = React.forwardRef((props, ref) => {
                     </div>
                     <div className='AB-page-body-container'>
                         <p className='AB-page-body'>I am a UI developer turned designer, a decision that was a result of learning the importance of usability and user perception in interfaces. I firmly believe products are supposed to be tools to help us become a better version of ourselves, not distract us away from it.</p>
-                        <p className='AB-page-body'>I am currently pursuing a graduate degree in Human-Centered Computing from the University of Maryland, Baltimore County (UMBC). Through my coursework and research projects at UMBC, I have gained a deep understanding of user-centered design principles and honed my skills in creating intuitive, user-friendly & effective tools.</p>
+                        <p className='AB-page-body'>Currently, I am pursuing a graduate degree in <b style={{color: "#FFFFFF"}}>Human-Centered Computing</b> from the <a href="https://hcc.umbc.edu/">University of Maryland, Baltimore County (UMBC)</a>. Through my coursework and research projects at UMBC, I have gained a deep understanding of user-centered design principles and honed my skills in creating intuitive, user-friendly & effective tools.</p>
                         <p className='AB-page-body'>I've previously worked on creating user interfaces professionally for web and mobile platforms, and have recently worked on designing UX screens for an e-commerce mobile application.</p>
-                        <p className='AB-page-body'>I'm looking for opportunities to use my learned skills and have a direct effect on people's lives through intelligently designed systems.</p>
+                        <p className='AB-page-body'>I'm looking for opportunities to use my learned skills and excited about having a direct effect on people's lives through intelligently designed systems.</p>
                         <div className='social' id="social">
                             <div onClick={() => onLinkClick("behance")}>BEHANCE</div>
                             <div>/</div>
