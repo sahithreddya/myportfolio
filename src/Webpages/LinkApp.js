@@ -9,8 +9,9 @@ import { Carousel } from "@fancyapps/ui/dist/carousel/carousel.esm.js";
 import { Fancybox } from "@fancyapps/ui/dist/fancybox/fancybox.esm.js";
 import { Thumbs } from "@fancyapps/ui/dist/carousel/carousel.thumbs.esm.js";
 import "@fancyapps/ui/dist/carousel/carousel.thumbs.css";
-import "@fancyapps/ui/dist/fancybox/fancybox.css";
-import "@fancyapps/ui/dist/carousel/carousel.css";
+import "@fancyapps/ui/dist/fancybox/fancybox.css";  
+// Added below css to index.html through a CDN
+// import "@fancyapps/ui/dist/carousel/carousel.css";
 
 const LinkApp = React.forwardRef((props, ref) => {
     // let location = useLocation();
@@ -72,9 +73,9 @@ const LinkApp = React.forwardRef((props, ref) => {
                     </ul>
                     <div className='LA-img-container'>
                         <div className='LA-img-src-container'>
-                            <div class="f-carousel LA-carousel" id="myCarousel">
-                                <div class="f-carousel__viewport">
-                                    <div class="f-carousel__track">
+                            <div className="f-carousel LA-carousel" id="myCarousel">
+                                <div className="f-carousel__viewport">
+                                    <div className="f-carousel__track">
                                         {getImages("contactList")}
                                     </div>
                                 </div>
@@ -85,9 +86,9 @@ const LinkApp = React.forwardRef((props, ref) => {
                     <div className='LA-img-container'>
                         <p className='LA-page-body LA-carousel-text'>Merchant profile creation flow is for the user to create a profile for his business. There are multiple configurations available for the user to set up their profile accordingly.</p>
                         <div className='LA-img-src-container'>
-                            <div class="f-carousel LA-carousel" id="myCarousel-2">
-                                <div class="f-carousel__viewport">
-                                    <div class="f-carousel__track">
+                            <div className="f-carousel LA-carousel" id="myCarousel-2">
+                                <div className="f-carousel__viewport">
+                                    <div className="f-carousel__track">
                                         {getImages("merchantOptions")}
                                     </div>
                                 </div>
