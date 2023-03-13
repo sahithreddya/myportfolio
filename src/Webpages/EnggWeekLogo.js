@@ -33,7 +33,7 @@ const EnggWeekLogo = React.forwardRef((props, ref) => {
             <HeaderBar />
             <div className='EnggWeekLogo-page-content'>
                 <div>
-                    <p className='EnggWeekLogo-page-title'>Tourism Brand Logo</p>
+                    <p className='EnggWeekLogo-page-title'>Engineering Week Logo</p>
                     <p className='EnggWeekLogo-page-subtitle'>Logo Design</p>
                     {/* <div className='colorBarHorizontal'/>
                     <div className='colorBarHorizontal'/> */}
