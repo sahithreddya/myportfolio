@@ -13,7 +13,7 @@ const HeaderBar = React.forwardRef((props, ref) => {
                 <Link to="/" state={{from: location.pathname, to: 'home'}}><p className='header-item'>Home</p></Link>
                 <Link to="/" state={{from: location.pathname, to: 'work'}}><p className='header-item'>Work</p></Link>
                 <Link to="/About" state={{from: location.pathname}}><p className='header-item'>About Me</p></Link>
-                <p onClick={() => window.open(resume)} className='header-item'>Résumé</p>
+                <p style={{cursor: "pointer"}} onClick={() => window.open(resume)} className='header-item'>Résumé</p>
             </div>
         </div>
     );
