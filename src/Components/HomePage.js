@@ -27,7 +27,7 @@ const HomePage = React.forwardRef((props, ref) => {
       </div> */}
       <div className='Intro'>
         <p className='hello-class'>Hello, <br/> I'm Sahith.</p>
-        <p className='hello-body'>I'm a UI/UX designer solving problems and creating great experiences for users.</p>
+        <p className='hello-body'>I'm a UI Developer and UX Designer, creating user-centric solutions that deliver memorable experiences.</p>
         {/* <a className='profile-link' onClick={() => onLinkClick("linkedin")}><br/><FaLink style={{verticalAlign: '-0.125em', marginRight: "1em"}} color="#664771"/> LinkedIn</a>
         <a className='profile-link' onClick={() => onLinkClick("behance")}><br/><FaLink style={{verticalAlign: '-0.125em', marginRight: "1em"}} color="#664771"/> Behance</a> */}
         <div className='social'>
