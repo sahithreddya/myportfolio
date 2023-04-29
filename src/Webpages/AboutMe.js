@@ -4,6 +4,8 @@ import HeaderBar from '../Components/HeaderBar.js'
 import Footer from '../Components/Footer.js';
 import { onLinkClick } from '../Components/Footer.js';
 import { useEffect } from "react";
+import InitializeGoogleAnalytics, { TrackGoogleAnalyticsEvent } from '../GoogleAnalytics/googleanalytics4';
+
 
 import DP from '../Assets/Images/DP.jpg';
 
@@ -14,6 +16,8 @@ const AboutMe = React.forwardRef((props, ref) => {
     // added since scroll position from previous page was being used
     useEffect(() => {
         window.scrollTo(0, 0);
+        InitializeGoogleAnalytics(); //initializing GA4
+        TrackGoogleAnalyticsEvent( "User Activity", "wanted to know about me", window.location.pathname );
     });
 
     return (
