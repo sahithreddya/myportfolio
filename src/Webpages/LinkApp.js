@@ -21,6 +21,7 @@ const LinkApp = React.forwardRef((props, ref) => {
     // added since scroll position from previous page was being used
     useEffect(() => {
         window.scrollTo(0, 0);
+        document.title = "Sahith Reddy | LinkApp"
         InitializeGoogleAnalytics(); //initializing GA4
         TrackGoogleAnalyticsEvent( "User Activity", "LinkApp", window.location.pathname );
         const container = document.getElementById("myCarousel");

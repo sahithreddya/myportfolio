@@ -19,6 +19,7 @@ const EnggWeekLogo = React.forwardRef((props, ref) => {
     // added since scroll position from previous page was being used
     useEffect(() => {
         window.scrollTo(0, 0);
+        document.title = "Sahith Reddy | Engineering Week Logo"
         InitializeGoogleAnalytics(); //initializing GA4
         TrackGoogleAnalyticsEvent( "User Activity", "EnggWeekLogo", window.location.pathname );
     });
