@@ -17,6 +17,7 @@ const Beagle = React.forwardRef((props, ref) => {
     // added since scroll position from previous page was being used
     useEffect(() => {
         window.scrollTo(0, 0);
+        document.title = "Sahith Reddy | Beagle"
         InitializeGoogleAnalytics(); //initializing GA4
         TrackGoogleAnalyticsEvent( "User Activity", "Beagle", window.location.pathname );
     });

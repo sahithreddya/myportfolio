@@ -12,6 +12,7 @@ import { useRef } from 'react';
 const Home = () => {
 
   useEffect(()=>{
+    document.title = "Sahith Reddy"
     InitializeGoogleAnalytics(); //initializing GA4
     TrackGoogleAnalyticsEvent( "User Activity", "Homepage", window.location.pathname );
   })
