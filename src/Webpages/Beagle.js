@@ -8,6 +8,7 @@ import beagleimg from '../Assets/Images/Beagle/Beagle.png';
 
 import { Fancybox } from "@fancyapps/ui/dist/fancybox/fancybox.esm.js";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
+import InitializeGoogleAnalytics, { TrackGoogleAnalyticsEvent } from '../GoogleAnalytics/googleanalytics4';
 
 // TO DO - Decrease padding for mobile view
 
@@ -16,6 +17,8 @@ const Beagle = React.forwardRef((props, ref) => {
     // added since scroll position from previous page was being used
     useEffect(() => {
         window.scrollTo(0, 0);
+        InitializeGoogleAnalytics(); //initializing GA4
+        TrackGoogleAnalyticsEvent( "User Activity", "Beagle", window.location.pathname );
     });
 
     Fancybox.bind("[data-fancybox]", {

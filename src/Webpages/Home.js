@@ -13,7 +13,7 @@ const Home = () => {
 
   useEffect(()=>{
     InitializeGoogleAnalytics(); //initializing GA4
-    TrackGoogleAnalyticsEvent( "User Activity", "visited homepage", window.location.pathname );
+    TrackGoogleAnalyticsEvent( "User Activity", "Homepage", window.location.pathname );
   })
   const ref = useRef();
   const scroll = () => ref?.current?.scrollIntoView({ behavior: "smooth" });

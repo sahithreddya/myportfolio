@@ -4,6 +4,7 @@ import HeaderBar from '../Components/HeaderBar.js'
 import Footer from '../Components/Footer';
 import { useEffect } from "react";
 import { LinkAppImgSources } from '../Data/ImageExport.js';
+import InitializeGoogleAnalytics, { TrackGoogleAnalyticsEvent } from '../GoogleAnalytics/googleanalytics4';
 
 import { Carousel } from "@fancyapps/ui/dist/carousel/carousel.esm.js";
 import { Fancybox } from "@fancyapps/ui/dist/fancybox/fancybox.esm.js";
@@ -20,6 +21,8 @@ const LinkApp = React.forwardRef((props, ref) => {
     // added since scroll position from previous page was being used
     useEffect(() => {
         window.scrollTo(0, 0);
+        InitializeGoogleAnalytics(); //initializing GA4
+        TrackGoogleAnalyticsEvent( "User Activity", "LinkApp", window.location.pathname );
         const container = document.getElementById("myCarousel");
         const container2 = document.getElementById("myCarousel-2");
         const options = {

@@ -5,6 +5,7 @@ import Footer from '../Components/Footer';
 import { useEffect } from "react";
 
 import img from '../Assets/Images/HydTT/HydTT.jpg';
+import InitializeGoogleAnalytics, { TrackGoogleAnalyticsEvent } from '../GoogleAnalytics/googleanalytics4';
 
 // TO DO - Decrease padding for mobile view
 
@@ -13,6 +14,8 @@ const HydTT =  React.forwardRef((props, ref) => {
     // added since scroll position from previous page was being used
     useEffect(() => {
         window.scrollTo(0, 0);
+        InitializeGoogleAnalytics(); //initializing GA4
+        TrackGoogleAnalyticsEvent( "User Activity", "HTT", window.location.pathname );
       });
 
     return (

@@ -17,7 +17,7 @@ const AboutMe = React.forwardRef((props, ref) => {
     useEffect(() => {
         window.scrollTo(0, 0);
         InitializeGoogleAnalytics(); //initializing GA4
-        TrackGoogleAnalyticsEvent( "User Activity", "wanted to know about me", window.location.pathname );
+        TrackGoogleAnalyticsEvent( "User Activity", "About Me", window.location.pathname );
     });
 
     return (
