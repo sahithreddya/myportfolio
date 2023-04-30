@@ -11,7 +11,7 @@ const ImageViewer = React.forwardRef((props, ref) => {
     showDivs(slideIndex);
   });
   
-  console.log(props);
+  // console.log(props);
 
   const createImgTags = () => props.imgArray?.map((val) => <img src={val.src} className={props.imgClass} style={{ display: "none" }} onClick={() => plusDivs(1)} alt="screenshot"></img>);
   const createNavButtons = () => props.imgArray?.map((val, index) => <img src={navbtn} className="nav-btn nav-btn-enabled" onClick={() => currentDiv(index+1)} alt="nav button"></img>);
@@ -21,7 +21,7 @@ const ImageViewer = React.forwardRef((props, ref) => {
   let plusDivs = (n) => showDivs(slideIndex += n);
 
   let currentDiv = (n) => {
-    console.log("clicked " + n);
+    // console.log("clicked " + n);
     showDivs(slideIndex = n);
   }
 

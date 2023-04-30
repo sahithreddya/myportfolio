@@ -4,6 +4,7 @@ import HeaderBar from '../Components/HeaderBar.js'
 import Footer from '../Components/Footer';
 import { Link } from 'react-router-dom';
 import { useEffect } from "react";
+import InitializeGoogleAnalytics, { TrackGoogleAnalyticsEvent } from '../GoogleAnalytics/googleanalytics4';
 
 const Mirkwood = React.forwardRef((props, ref) => {
 
@@ -12,6 +13,8 @@ const Mirkwood = React.forwardRef((props, ref) => {
     // added since scroll position from previous page was being used
     useEffect(() => {
         window.scrollTo(0, 0);
+        InitializeGoogleAnalytics(); //initializing GA4
+        TrackGoogleAnalyticsEvent( "User Activity", "404", window.location.pathname );
       });
 
     return (

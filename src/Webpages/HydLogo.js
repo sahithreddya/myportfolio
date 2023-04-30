@@ -3,6 +3,7 @@ import './Styles/HydLogo.css'
 import HeaderBar from '../Components/HeaderBar.js'
 import Footer from '../Components/Footer';
 import { useEffect } from "react";
+import InitializeGoogleAnalytics, { TrackGoogleAnalyticsEvent } from '../GoogleAnalytics/googleanalytics4';
 
 import logo from '../Assets/Images/HydTT/logo.png';
 import logosquare from '../Assets/Images/HydTT/logo-square.png';
@@ -17,6 +18,8 @@ const HydLogo = React.forwardRef((props, ref) => {
     // added since scroll position from previous page was being used
     useEffect(() => {
         window.scrollTo(0, 0);
+        InitializeGoogleAnalytics(); //initializing GA4
+        TrackGoogleAnalyticsEvent( "User Activity", "HydLogo", window.location.pathname );
     });
 
     Fancybox.bind("[data-fancybox]", {
