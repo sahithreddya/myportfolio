@@ -4,8 +4,6 @@ import React from 'react';
 import { useEffect } from 'react';
 
 const ImageViewer = React.forwardRef((props, ref) => {
-  // const history = useHistory();
-  // const handleOnClick = (address) => history.push(`/${address}`);
 
   useEffect(() => {
     showDivs(slideIndex);

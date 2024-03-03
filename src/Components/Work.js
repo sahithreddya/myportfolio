@@ -5,8 +5,6 @@ import { workItems } from '../Data/WorkData';
 
 
 const Work = React.forwardRef((props, ref) => {
-  // const history = useHistory();
-  // const handleOnClick = (value) => history.push({ path: `/${value.title}`, state: { val: "test data" }});
 
   const workItemRender = () => workItems.map((item) =>
   <Link to={{pathname: `/${item.title}`}} style={{ textDecoration: "none"}}>

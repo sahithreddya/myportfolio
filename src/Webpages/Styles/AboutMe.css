@@ -62,7 +62,7 @@
 
 .AB-page-parent-container{
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .AB-page-body-about {
@@ -107,7 +107,7 @@
 .AB-dp{
   border-radius: 1em;
   width: 100%;
-  max-width: 250px;
+  /* max-width: 250px; */
   box-shadow: 0 0 0 0.3em #7FE2DC, 0 0 0 0.6em #664771;
 }
 

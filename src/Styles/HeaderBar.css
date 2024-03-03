@@ -43,7 +43,22 @@
   font-family: Inter-Bold;
   /* text-decoration: none !important; */
   font-size: 1.5em;
+  /* transform: scale(1); */
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
 }
+
+.header-item-hide {
+  color: white;
+  margin: 0 1em;
+  font-family: Inter-Bold;
+  font-size: 1.5em;
+  /* display: none; */
+  /* transform: scale(0); */
+  opacity: 0;
+  /* transition: all 0.5s ease-in-out; */
+}
+
 
 .header-item:hover {
   text-decoration: underline;
