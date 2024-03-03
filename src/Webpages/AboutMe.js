@@ -4,12 +4,13 @@ import HeaderBar from '../Components/HeaderBar.js'
 import Footer from '../Components/Footer.js';
 import { onLinkClick } from '../Components/Footer.js';
 import { useEffect } from "react";
+// import { useEffect } from "react";
 import InitializeGoogleAnalytics, { TrackGoogleAnalyticsEvent } from '../GoogleAnalytics/googleanalytics4';
 
 
 import DP from '../Assets/Images/DP.jpg';
 
-// TO DO - Decrease padding for mobile view
+// TO DO - Decrease padding for mobile view -- adding text to invoke build
 
 const AboutMe = React.forwardRef((props, ref) => {
 
