@@ -32,7 +32,7 @@ const AboutMe = React.forwardRef((props, ref) => {
                     <div className='AB-dp-container'>
                         <img alt='its me' className='AB-dp' src={DP}></img>
                     </div>
-                    <div className='AB-page-body-container'>
+                    <div className='AB-page-body-container'> 
                         <p className='AB-page-body'><b style={{color: "#FFFFFF"}}>Hello! I'm Sahith Reddy.</b> I am a UI developer turned designer, a decision that resulted from learning the importance of usability and user perception in interfaces. I firmly believe products are supposed to be tools to help us become a better version of ourselves, not distract us away from it.</p>
                         <p className='AB-page-body'>Currently, I am pursuing a graduate degree in <b style={{color: "#FFFFFF"}}>Human-Centered Computing</b> from the <a href="https://hcc.umbc.edu/">University of Maryland, Baltimore County (UMBC)</a>. Through my coursework and research projects at UMBC, I have gained a deep understanding of user-centered design principles and honed my skills in creating intuitive, user-friendly & effective tools.</p>
                         <p className='AB-page-body'>I've previously worked on creating user interfaces professionally for web and mobile platforms and have recently worked on designing UX screens for a mobile e-commerce application.</p>
